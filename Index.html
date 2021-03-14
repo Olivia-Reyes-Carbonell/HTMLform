@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <center>Formulario de registro</center>
+        </h1>
+    </header>
+    <form>
+        <fieldset>
+            <legend><strong>Datos de usuario</strong></legend>
+            <label>Email:</label>
+            <input type="email" name="email">
+            <br>
+            <br>
+            <label>Usuario:</label>
+            <input type="text" name="usuario">
+            <br>
+            <br>
+            <label>Contraseña:</label>
+            <input type="password" name="password" minlength="4" maxlength="6>" <br>
+            <p><em>La contraseña debe contener entre 4 y 6 caracteres</em></p>
+
+        </fieldset>
+        <fieldset>
+            <legend><strong>Datos personales</strong></legend>
+            <label>Nombre:</label>
+            <input type="text" name="fname" required> *
+            <br>
+            <br>
+            <label>Apellido:</label>
+            <input type="text" name="fname" required> *
+            <br>
+            <br>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fnacimiento">
+            <br>
+            <br>
+            <label>Sexo:</label>
+            <br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="hombre">Masculino</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" id="nodecirlo" name="genero" value="nodecirlo">
+            <label for="nodecirlo">Prefiero no decirlo</label><br>
+            <br>
+            <label> DNI/NIF:</label>
+            <input type="text" name="dni" size="10" maxlength="10" minlength="10" required> *
+            <p><em>El DNI/NIF debe contener 1 letra y 9 números</em></p>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Datos socioeconómicos</strong></legend>
+            <p>Dirección:</p>
+            <textarea></textarea>
+            <br>
+            <br>
+            <label>Móvil:</label>
+            <select name="countrycode">
+                <option data-countryCode="GB" value="44" Selected>Reino Unido(+44)</option>
+                <option data-countryCode="Spain" value="34" Selected>España(+34)</option>
+                <option data-countryCode="France" value="33" Selected>Francia(+33)</option>
+                <option data-countryCode="Italia" value="39" Selected>Italia(+39)</option>
+                <option data-countryCode="Alemania" value="49" Selected>Alemania(+49)</option>
+                
+            </select>
+            <input type="text" name="number">
+            <br>
+            <br>
+            <label>Tarjeta de crédito:</label>
+            <select name="cards" id="cards">
+                <option>Visa</option>
+                <option>Mastercard</option>
+                <option>Maestro</option>
+                <option>Visa electron</option>
+            </select>
+            <br>
+            <br>
+            <label>Nombre completo en tarjeta:</label>
+            <input type="text" name="namecard">
+            <br>
+            <br>
+            <label>Número:</label>
+            <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label> Código CVV:</label>
+            <input type="text" name="CVV" maxlength="3"> 
+    
+        </fieldset>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" checked="checked" name="politica">Acepta nuestra política de privacidad
+        </label>
+        <br>
+        <hr>
+        <label>
+            <input type="submit" value="Enviar">
+        </label>
+    </form>
+</body>
+</html>
